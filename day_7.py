@@ -1,8 +1,8 @@
 # 1 print indexes of vowels
 user_input = input("Enter a string containing vowels: ")
-for i in user_input:
-    if i in ['a','e','i','o','u']:
-        print(user_input.index(i),end=' ')
+for i in range(len(user_input)):
+    if user_input[i] in ['a','e','i','o','u']:
+        print(i,end=' ')
 
 # reverse words of a string
 words = input("\nEnter words seperated by spaces: ").split()
